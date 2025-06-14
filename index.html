@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh Kumar S | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<!-- Font Awesome CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header Section -->
+    <header class="flex items-center justify-between p-6 bg-gray-800">
+        <h1 class="text-3xl font-bold">Santhosh Kumar S</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="flex items-center justify-center min-h-screen bg-cover bg-center" style="background-image: url('assets/images/balcony.jpg');">
+        <div class="text-center text-white bg-black bg-opacity-50 p-10 rounded-lg">
+            <h2 class="text-4xl font-semibold">Aspiring Professional & Tech Enthusiast</h2>
+            <p class="mt-4 text-lg">MCA Graduate | Developer</p>
+            <a href="resume/resume.pdf" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white rounded-lg">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+            <p class="text-lg max-w-2xl mx-auto">I am a motivated MCA graduate with a strong willingness to learn and grow. I have completed projects using modern tools and technologies, including a full-stack Age and Gender Prediction Web App. I am comfortable working independently or in a team and have completed certifications in Blockchain, Scrum Master, and Computer Applications. I am looking for an opportunity to apply my skills, contribute to the team, and develop professionally.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg cursor-pointer" onclick="openModal(1)">
+                    <img src="assets/images/project1_3.png" alt="Project 1" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-xl font-semibold mt-4">Age and Gender Prediction Web App</h3>
+                    <p class="mt-2">A full-stack AI-powered web application built with Flask that predicts a person's age and gender from facial images using pre-trained Caffe deep learning models.</p>
+                    <a href="https://github.com/saan7188/age-gender-prediction-website" class="mt-4 inline-block text-blue-500">View Project</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-800">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-white mb-6">Contact Me</h2>
+        <p class="text-lg text-white mb-6">Feel free to reach out to me via email, LinkedIn, or phone. I would love to connect!</p>
+        
+        <!-- Add flex-wrap for responsive behavior on small screens -->
+        <div class="flex flex-col sm:flex-row sm:space-x-6 justify-center">
+            <!-- Email -->
+            <div class="mb-6 sm:mb-0">
+                <a href="mailto:ssksanjay66@gmail.com" class="text-blue-500 hover:text-blue-400 text-2xl flex items-center">
+                    <i class="fas fa-envelope mr-2"></i> ssksanjay66@gmail.com
+                </a>
+            </div>
+            
+            <!-- LinkedIn -->
+            <div class="mb-6 sm:mb-0">
+                <a href="https://www.linkedin.com/in/sinsan718" target="_blank" class="text-blue-500 hover:text-blue-400 text-2xl flex items-center">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn Profile
+                </a>
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-6 sm:mb-0">
+                <a href="tel:+919942671437" class="text-blue-500 hover:text-blue-400 text-2xl flex items-center">
+                    <i class="fas fa-phone-alt mr-2"></i> +91 9942671437
+                </a>
+            </div>
+        </div>
+
+        <!-- GitHub Link (Optional section) -->
+        <div class="mt-6">
+            <p class="text-white">You can also reach out to me on social platforms or check out my projects on GitHub:</p>
+            <a href="https://github.com/saan7188" target="_blank" class="text-blue-500 hover:text-blue-400 mt-2 inline-block text-xl">
+                GitHub Profile
+            </a>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Modal for Project 1 -->
+<div id="modal1" class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-gray-800 p-8 rounded-lg max-w-4xl w-full overflow-auto">
+        <button onclick="closeModal(1)" class="text-white text-2xl absolute top-4 right-4">&times;</button>
+        <h2 class="text-2xl font-bold text-white mb-4">Age and Gender Prediction Web App</h2>
+
+        <!-- Screenshots Gallery (9 screenshots) -->
+        <div class="grid grid-cols-3 gap-4 mb-4">
+            <img src="assets/images/project1_1.png" alt="Screenshot 1" class="w-full rounded-lg">
+            <img src="assets/images/project1_2.png" alt="Screenshot 2" class="w-full rounded-lg">
+            <img src="assets/images/project1_3.png" alt="Screenshot 3" class="w-full rounded-lg">
+            <img src="assets/images/project1_4.png" alt="Screenshot 4" class="w-full rounded-lg">
+            <img src="assets/images/project1_5.png" alt="Screenshot 5" class="w-full rounded-lg">
+            <img src="assets/images/project1_6.png" alt="Screenshot 6" class="w-full rounded-lg">
+            <img src="assets/images/project1_7.png" alt="Screenshot 7" class="w-full rounded-lg">
+            <img src="assets/images/project1_8.png" alt="Screenshot 8" class="w-full rounded-lg">
+            
+        </div>
+
+        <p class="text-lg text-white mb-4">This AI-powered web application predicts a person's age and gender from facial images using pre-trained Caffe deep learning models. Built using Flask, OpenCV, and NumPy, the app allows users to upload images and get real-time predictions.</p>
+
+        <h3 class="text-xl font-semibold text-white mt-4">Technologies Used:</h3>
+        <ul class="text-white mb-4">
+            <li>Python (Flask)</li>
+            <li>OpenCV</li>
+            <li>Caffe Deep Learning Models</li>
+            <li>HTML, CSS, JavaScript</li>
+        </ul>
+        <a href="https://github.com/saan7188/age-gender-prediction-website" class="mt-4 text-blue-500">View Project on GitHub</a>
+    </div>
+</div>
+
+        <!-- Script for Modal -->
+    <script>
+        // Open Modal
+        function openModal(projectId) {
+            document.getElementById('modal' + projectId).classList.remove('hidden');
+        }
+
+        // Close Modal
+        function closeModal(projectId) {
+            document.getElementById('modal' + projectId).classList.add('hidden');
+        }
+    </script>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
